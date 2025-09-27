@@ -147,78 +147,6 @@ body {
   object-fit: cover;
 }
 
-/* AUTH PAGE */
-.auth-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-}
-
-/* Laser Flow Effect */
-.laser-lines {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  overflow: hidden;
-  z-index: 1;
-}
-.laser-lines span {
-  position: absolute;
-  display: block;
-  width: 200%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(0,255,255,0.8), transparent);
-  animation: laserFlow 6s linear infinite;
-  filter: blur(1px);
-}
-.laser-lines span:nth-child(1) { top: 25%; left: -100%; animation-delay: 0s; }
-.laser-lines span:nth-child(2) { top: 50%; left: -100%; animation-delay: 2s; }
-.laser-lines span:nth-child(3) { top: 75%; left: -100%; animation-delay: 4s; }
-.laser-lines span:nth-child(4) { top: 90%; left: -100%; animation-delay: 6s; }
-
-@keyframes laserFlow {
-  0% { transform: translateX(-100%) rotate(20deg); }
-  100% { transform: translateX(100%) rotate(20deg); }
-}
-
-/* Back to Home Button */
-.back-home { margin-top: 1.5rem; text-align: center; }
-
-.auth-form-panel {
-  position: relative;
-  background: #111;
-  padding: 2.5rem 2rem;
-  border-radius: 20px;
-  max-width: 360px;
-  width: 100%;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.8);
-  z-index: 2;
-}
-.auth-form-panel h2 { margin-bottom: 1.5rem; text-align: center; color: #fff; }
-.auth-form-panel form { display: grid; gap: 1rem; }
-.auth-form-panel form label { display: flex; flex-direction: column; color: #ddd; }
-.auth-form-panel form input {
-  margin-top: 0.3rem;
-  padding: 0.6rem 0.8rem;
-  border: 1px solid #333;
-  border-radius: 8px;
-  background: #222;
-  color: #fff;
-}
-.auth-form-panel form button { margin-top: 1rem; }
-.auth-form-panel p {
-  margin-top: 1rem;
-  color: #bbb;
-  font-size: 0.9rem;
-  text-align: center;
-}
-.auth-form-panel p a { color: #fff; text-decoration: underline; }
-
 /* SMOOTH SCROLL */
 html { scroll-behavior: smooth; }
 
@@ -245,21 +173,6 @@ html { scroll-behavior: smooth; }
   line-height: 1.6;
   font-family: 'Poppins', sans-serif;
 }
-
-/* COLLECTION HERO IMAGES */
-.collection-hero {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.collection-hero img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  display: block;
-}
-
-/* COLLECTION GRID */
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -275,23 +188,10 @@ html { scroll-behavior: smooth; }
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
-.collection-item img {
-  width: 100%;
-  display: block;
-}
-.item-info {
-  padding: 1rem;
-  text-align: left;
-}
-.item-info h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-.item-info p {
-  margin: 0.3rem 0 0;
-  color: #ccc;
-  font-size: 0.95rem;
-}
+.collection-item img { width: 100%; display: block; }
+.item-info { padding: 1rem; text-align: left; }
+.item-info h3 { margin: 0; font-size: 1.1rem; }
+.item-info p { margin: 0.3rem 0 0; color: #ccc; font-size: 0.95rem; }
 
 /* CONTACT SECTION */
 .contact {
